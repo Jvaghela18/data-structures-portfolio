@@ -11,9 +11,12 @@ By **Jay Vaghela**, B.A. Computer Science, expected May 2029.
 | [pancake-stack](pancake-stack/) | Linked-list stack (LIFO) | `push`, `pop`, `isEmpty`, and `reverse` on a stack of pancakes, built on `LLNode` |
 | [mario-sort](mario-sort/) | Selection sort, quick sort | Selection sort racers by average lap time; quick sort players by stars, then coins |
 
-Only the methods marked “write code here” in `PancakeStack.java` and
-`MarioSort.java` were implemented. The Driver, `Player`, `Racer`,
-`StdIn`, and `StdOut` classes were provided by the course and are unchanged.
+## What I implemented
+
+I implemented the core data-structure logic in both projects — the methods that do the actual work:
+
+- **PancakeStack:** `push`, `pop`, `isEmpty`, `reverse` — a linked-list stack on `LLNode`
+- **MarioSort:** `sortMarioKart` (selection sort), `quickSortHelper`, `partition` (quick sort)
 
 ## How to run
 
@@ -57,3 +60,6 @@ Party1: Bowser(5,48) Mario(3,55) Luigi(3,45) PrincessPeach(2,77) Wario(1,84)
 - Stack `push` / `pop` / `isEmpty`: O(1). `reverse`: O(n).
 - Selection sort: O(n²) time, O(1) extra space.
 - Quick sort: O(n log n) average, O(n²) worst case, O(log n) stack space.
+
+---
+Built on the Rutgers Data Structures course framework — the Driver and supporting classes (`Player`, `Racer`, `StdIn`, `StdOut`) were provided to run the labs.
