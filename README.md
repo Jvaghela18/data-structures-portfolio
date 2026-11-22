@@ -13,7 +13,6 @@ By **Jay Vaghela**, B.A. Computer Science, expected May 2029.
 | [gladiators](gladiators/) | Binary search tree | Cities as BST nodes battle in duels; draft duelers, delete cities, count survivors |
 | [stock-market](stock-market/) | Linked lists, array | Buy/sell stocks, track a portfolio and transaction history, compute ROI and profit extrema |
 | [theme-park-queue](theme-park-queue/) | Linked-list queue (FIFO) | `enqueue`, `dequeue`, and interleaving two lines of riders into one |
-| [code-coverage](code-coverage/) | JUnit testing | Five small methods with a test file to fill in — see that folder's README for its status |
 
 ## What I implemented
 
@@ -24,7 +23,6 @@ I implemented the core data-structure logic in these projects — the methods th
 - **Gladiators (`Coliseum`):** `readCities`, `readPeople`, `addCityToGame`, `findCity`, `selectDuelers`, `eliminateCity`, `countRemainingCities`, `eliminateDueler` — BST insert/search/delete and the four-pass dueler draft
 - **StockMarket:** `readMarketData`, `updateBalance`, `purchaseStock`, `sellStock`, `recordTransaction`, `getStockHistory`, `computeROI`, `findProfitExtrema` — linked-list portfolio and transaction history over a stock-price array
 - **ThemeParkQueue:** `enqueue`, `dequeue`, `interleaveQueue` — a linked-list queue and merging two lines
-- **CodeCoverage:** the five source methods were already implemented in the files as provided, so nothing in them was changed; the assignment's real work — writing the JUnit tests in `CodeTest.java` — is still open (see [code-coverage/README.md](code-coverage/README.md))
 
 ## How to run
 
@@ -57,9 +55,7 @@ java -cp bin:lib/cs112.jar queue.Driver
 ## Testing
 
 Verified locally with Java 21, using the test harnesses in each project's
-`test/` folder. 140 checks passed, 0 failed on the methods I implemented
-(plus 13 verification checks on the already-implemented CodeCoverage
-methods — see below).
+`test/` folder. 140 checks passed, 0 failed on the methods I implemented.
 
 - **Pancake Stack (19 checks):** empty stack, push/pop order (LIFO),
   size tracking, pop on an empty stack returns `null`, reverse of an
@@ -81,11 +77,6 @@ methods — see below).
   VZ 6.19%, GME 3468.91%).
 - **Theme Park Queue (19 checks):** FIFO order, dequeue on an empty
   queue, and interleaving two lines in every size combination.
-- **Code Coverage (13 checks, verification only):** the five provided
-  methods behave correctly (binary search, factorial, FizzBuzz, max,
-  palindrome). These checks verify code that was already provided,
-  not code I wrote, and the JUnit test-writing part of that assignment
-  is still open.
 
 Example results:
 
